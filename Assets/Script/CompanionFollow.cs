@@ -6,6 +6,11 @@ public class CompanionFollow : MonoBehaviour
     public float followSpeed;
     public float followDistance;
 
+    void Start()
+    {
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Companion"), LayerMask.NameToLayer("Player"));
+    }
+
     void Update()
     {
      float distance = Vector3.Distance(transform.position, player.position);
