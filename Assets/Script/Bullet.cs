@@ -21,6 +21,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        rb.linearVelocity = transform.up * speed;
+        rb.linearVelocity = transform.right * speed;
     }
 }

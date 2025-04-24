@@ -5,16 +5,19 @@ TagManager:
   serializedVersion: 3
   tags:
   - DestroyableObject
+  - Bullet
+  - Enemy
+  - Companion
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Player
   - Companion
-  - 
+  - Bullet
   - 
   - 
   - 

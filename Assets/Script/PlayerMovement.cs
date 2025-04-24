@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
         am = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Bullet"));
     }
 
     void FixedUpdate()

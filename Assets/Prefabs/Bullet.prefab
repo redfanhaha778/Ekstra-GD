@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 6163721490902392865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2877, y: -0.3029, z: 0.015087021}
-  m_LocalScale: {x: 0.02414917, y: 0.009007145, z: 1}
+  m_LocalPosition: {x: 0.0253, y: 0.0038, z: 0.015087021}
+  m_LocalScale: {x: 0.055759225, y: 0.043956667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3619741575355964475}
@@ -98,9 +98,10 @@ GameObject:
   - component: {fileID: 3619741575355964475}
   - component: {fileID: 293264558687208622}
   - component: {fileID: 3608801559396052406}
-  m_Layer: 0
+  - component: {fileID: 3795550129885544775}
+  m_Layer: 8
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 6353061974977518774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0168452, y: 1.3330028, z: -0.015087021}
+  m_LocalPosition: {x: 0, y: 1.3330028, z: -0.015087021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -152,12 +153,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0.028910296, y: -0.0067453724}
+  m_Size: {x: 0.09030189, y: 0.07681131}
   m_Direction: 1
 --- !u!50 &3608801559396052406
 Rigidbody2D:
@@ -186,6 +187,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3795550129885544775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6353061974977518774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bf57a3f06263841a0ec531eec49c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  lifeTime: 4
 --- !u!1 &8143729057406332758
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,8 +227,8 @@ Transform:
   m_GameObject: {fileID: 8143729057406332758}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.27459994, y: -0.30266994, z: 0.015087021}
-  m_LocalScale: {x: 0.01007748, y: 0.0077765095, z: 1}
+  m_LocalPosition: {x: 0.05554, y: 0.004919978, z: 0.015087021}
+  m_LocalScale: {x: 0.023268398, y: 0.03795092, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3619741575355964475}
