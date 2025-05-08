@@ -46,7 +46,7 @@ public class CompanionFollow : MonoBehaviour
 
         if (CompcurrentHealth <= 0)
         {
-            Destroyed();
+            GameManager.Instance.GameOver();
         }
         else{
             StartCoroutine(InvicibilityCooldown());
